@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Catalogs = ({item}) => {
+const Deserts = ({item}) => {
      return (
          
               <div className="pizza-block">
@@ -10,17 +10,7 @@ const Catalogs = ({item}) => {
               alt="Pizza"
             />
             <h4 className="pizza-block__title">{item.name}</h4>
-            <div className="pizza-block__selector">
-              <ul>
-                <li className="active">тонкое</li>
-                <li>традиционное</li>
-              </ul>
-              <ul>
-                <li className="active">26 см</li>
-                <li>30 см.</li>
-                <li>40 см.</li>
-              </ul>
-            </div>
+            <h4 className="pizza-block__description">{item.description}</h4>
             <div className="pizza-block__bottom">
               <div className="pizza-block__price">от {item.price} 
               <img  className="munar" src="https://www.flaticon.com/svg/vstatic/svg/1868/1868110.svg?token=exp=1610692552~hmac=2a132ed814a848c6e397207cb129851e"></img>
@@ -39,12 +29,11 @@ const Catalogs = ({item}) => {
                     />
                   </svg>
                   <span>Добавить</span>
-                  <i>2</i>
+                  <i>1</i>
                </div>
                </div>
-               </div>
-
-
-     )
-}
-export default Catalogs;
+            </div>
+            
+          );
+     }
+export default Deserts;
