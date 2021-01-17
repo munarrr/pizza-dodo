@@ -1,4 +1,5 @@
 import React from 'react'
+import {result,setResult} from '../header/logo/logo'
 
 const Pizzaitem = ({item}) => {
      return (
@@ -17,8 +18,10 @@ const Pizzaitem = ({item}) => {
                     fill="white"
                     />
                   </svg>
-                  <span>Добавить</span>
-                  <i>2</i>
+                  <button onClick={()=> {setResult(result + 1)}}>Добавить</button>
+                  <i>1</i>
+                  <h1 class="title">60 минут или пицца бесплатно</h1>
+                  
                </div>
                </div>
 

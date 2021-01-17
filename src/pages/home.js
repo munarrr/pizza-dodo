@@ -1,5 +1,4 @@
 import React from 'react'
-import Head from '../components/header/header'
 import Catalogs from '../components/header/catalogs/index'
 import Deserts from '../components/header/catalogs/deserts'
 import Nav from '../components/header/nav/index'
@@ -27,7 +26,7 @@ const Header = () => {
           <div className="content">
             <div className="content__top">
                  <initMap />
-               <Head />   
+                
                <Nav />
                <Sort />
                </div>
