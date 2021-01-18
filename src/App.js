@@ -1,19 +1,21 @@
 import React from 'react'
 import Header from './pages/home'
 import Logo from './components/header/logo/logo'
-import Corzin from './components/card/corzin/corzin'
+import Cart from './pages/cart'
 import {Route} from 'react-router-dom'
 import './scss/app.scss'
+
+
 
 
 function App() {
 
   return (
-   <div class="wrapper">
-     <div class="header">
+   <div className="wrapper">
+     <div className="header">
        <Logo /> 
-      <Route  to path="/corzin" component={Corzin}  /> 
-        <div class="container"> 
+      <Route  to path="/corzin" component={Cart}  /> 
+        <div className="container"> 
          <Route exact to path="/" component={Header}  />
          </div>        
       </div> 

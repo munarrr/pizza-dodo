@@ -7,14 +7,18 @@ const Sort = () => {
      const sortRef = React.useRef();
      const handleActivePopUp =() =>setActivePupUp(activePopUp ? false : true);
      const sortName = ['популярности','цене','алфавиту']
-     const handleClickOutside = (event) => {
-          if (!event.path.includes(sortRef.current)){
+     
+     const handleClickOutside = (e) => {
+          if (!e.path.includes(sortRef.current)){
                setActivePupUp(false);
           }
+          else (setActivePupUp(true))
      };
      React.useEffect(() => {
           document.addEventListener('click', handleClickOutside);
      },[]);
+
+
      return (   
             <div ref={sortRef} className="sort">
               <div onClick={handleActivePopUp} className="sort__label">

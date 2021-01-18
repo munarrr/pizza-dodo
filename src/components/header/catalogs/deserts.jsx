@@ -4,11 +4,7 @@ const Deserts = ({item}) => {
      return (
          
               <div className="pizza-block">
-            <img
-              className="pizza-block__image"
-              src={item.imageUrl}
-              alt="Pizza"
-            />
+            <img  className="pizza-block__image"  src={item.imageUrl}    alt="Pizza"/>
             <h4 className="pizza-block__title">{item.name}</h4>
             <h4 className="pizza-block__description">{item.description}</h4>
             <div className="pizza-block__bottom">

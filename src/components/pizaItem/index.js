@@ -20,7 +20,7 @@ const Pizzaitem = ({item}) => {
                   </svg>
                   <button onClick={()=> {setResult(result + 1)}}>Добавить</button>
                   <i>1</i>
-                  <h1 class="title">60 минут или пицца бесплатно</h1>
+                  <h1 className="title">60 минут или пицца бесплатно</h1>
                   
                </div>
                </div>

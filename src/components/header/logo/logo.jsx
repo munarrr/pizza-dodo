@@ -1,7 +1,6 @@
 import React from 'react'
 import logo from '../../../images/pizza-logo.svg'
 import {Link} from 'react-router-dom'
-import Corzin from '../../card/corzin/corzin'
 
 const Logo = () => {
   const [result,setResult] = React.useState(0)
@@ -50,24 +49,9 @@ const Logo = () => {
                        />
                      </svg>
                      <span>{result}</span>
-                     <button onClick={()=> {setResult(result + 1)}}>ff</button>
                    </Link>
                  
-                 <section class="hdblz8-0 YWLBm">
-                   <article class="hdblz8-1 kEZJQu">
-                     <h1 class="title">60 минут или пицца бесплатно</h1>Если мы не успеем доставить любые продукты, кроме сувенирной продукции и соусов, в течение 60 минут, курьер подарит вам сертификат на большую пиццу.</article>
-                     <article class="hdblz8-1 kEZJQu">
-                       <h1 class="title">
-                         <span class="money ">
-                           <span class="money__value">345</span>
-                           <span class="money__currency money__currency_on-the-right"> сом</span>
-                           </span></h1><p class="p">Минимальная сумма доставки без учета товаров из категории «Другие товары»</p>
-                           <h1 class="title"><span class="money "><span class="money__value">7&nbsp;000</span>
-                           <span class="money__currency money__currency_on-the-right"> 67сом</span></span></h1>
-                           <p>Максимальная сумма при оплате наличными</p>Изображения продуктов могут отличаться от продуктов в заказе.</article>
-                           <article class="hdblz8-1 jOeIIG"><h1 class="title">Зона доставки ограничена</h1>
-                             <span class="delivery-zone-menu-page__title">Зона доставки</span></article>
-                             </section>
+                
                              </div>
                </div>
      )
